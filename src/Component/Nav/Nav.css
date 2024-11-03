@@ -1,0 +1,28 @@
+.favorite::after {
+    content: attr(favorite-count);
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    height: 15px;
+    width: 15px;
+    color: #ffffff;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart::after {
+    content: attr(cart-count);
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    height: 15px;
+    width: 15px;
+    color: #ffffff;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
