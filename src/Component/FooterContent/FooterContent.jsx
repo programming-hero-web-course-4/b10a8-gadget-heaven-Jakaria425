@@ -2,7 +2,7 @@
 
 const FooterContent = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-40">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-40 ">
             <div>
                 <h3 className="mb-4 font-bold">Services</h3>
                 <ul>

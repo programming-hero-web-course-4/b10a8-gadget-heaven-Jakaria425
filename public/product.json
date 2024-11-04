@@ -1,0 +1,257 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Iphone X",
+        "product_image": "https://ae01.alicdn.com/kf/S4023a0cdc5f84856a68eb388c38b0ce0c.jpg_960x960.jpg",
+        "category": "phone",
+        "price": 699.99,
+        "offer_percent": 15,
+        "description": "A sleek smartphone with high-performance features and stunning design.",
+        "Specification": [
+            "6.1-inch OLED display",
+            "Triple-lens camera",
+            "128GB storage",
+            "5G compatible"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 2,
+        "product_title": "Smartphone Y",
+        "product_image": "https://example.com/images/smartphoneY.jpg",
+        "category": "phone",
+        "price": 799.99,
+        "offer_percent": 10,
+        "description": "An advanced smartphone with superior camera and fast processing speed.",
+        "Specification": [
+            "6.5-inch AMOLED display",
+            "Quad-lens camera",
+            "256GB storage",
+            "5G compatible"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 3,
+        "product_title": "Samsung galaxy Z",
+        "product_image": "https://www.classic-phones.com/cdn/shop/products/galaxy-z-fold4-11.jpg?v=1666722482&width=1000",
+        "category": "phone",
+        "price": 299.99,
+        "offer_percent": 20,
+        "description": "Affordable smartphone with all essential features and reliable performance.",
+        "Specification": [
+            "6.0-inch LCD display",
+            "Dual-lens camera",
+            "512GB storage",
+            "5G compatible"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 4,
+        "product_title": "Gaming Laptop Z",
+        "product_image": "https://m.media-amazon.com/images/I/61Z-zUr9WNL._AC_UF894,1000_QL80_.jpg",
+        "category": "laptop",
+        "price": 1199.99,
+        "offer_percent": 20,
+        "description": "High-performance gaming laptop with immersive graphics and fast refresh rate.",
+        "Specification": [
+            "15.6-inch Full HD display",
+            "Intel i7 Processor",
+            "16GB RAM",
+            "NVIDIA GTX 3060"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 5,
+        "product_title": "Ultrabook Slim",
+        "product_image": "https://www.custommacbd.com/cdn/shop/products/dell-xps-17-9720-silver-custom-mac-bd_17ba1f1a-e143-4da0-8381-86f41fb68fee.png?v=1656157489",
+        "category": "laptop",
+        "price": 999.99,
+        "offer_percent": 15,
+        "description": "Lightweight ultrabook with long battery life, ideal for work and travel.",
+        "Specification": [
+            "14-inch FHD display",
+            "Intel i5 Processor",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 6,
+        "product_title": "Acer Aspire 5 (2020)",
+        "product_image": "https://www.digitaltrends.com/wp-content/uploads/2021/06/acer-chromebook-spin-15-2021.jpg?fit=720%2C720&p=1",
+        "category": "laptop",
+        "price": 499.99,
+        "offer_percent": 10,
+        "description": "Affordable laptop designed for students with all the essential features.",
+        "Specification": [
+            "15.6-inch HD display",
+            "Intel i3 Processor",
+            "4GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 7,
+        "product_title": "MacBook Pro M1",
+        "product_image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg",
+        "category": "macbook",
+        "price": 1499.99,
+        "offer_percent": 10,
+        "description": "Apple MacBook Pro with the powerful M1 chip for unmatched performance.",
+        "Specification": [
+            "13-inch Retina display",
+            "Apple M1 chip",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 8,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://techcrunch.com/wp-content/uploads/2016/11/img_3198.jpg",
+        "category": "macbook",
+        "price": 1299.99,
+        "offer_percent": 5,
+        "description": "Lightweight and efficient, the MacBook Air M2 is designed for maximum portability.",
+        "Specification": [
+            "13.6-inch Retina display",
+            "Apple M2 chip",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 9,
+        "product_title": "MacBook Pro 16 M1",
+        "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0_7-e2yMypEtYUL331Tl4c-9rM93y2CkEyU4aC_CKtIGW2SVj70r1h2Bj5wUmi9_Ywg&usqp=CAU",
+        "category": "macbook",
+        "price": 2499.99,
+        "offer_percent": 8,
+        "description": "High-performance 16-inch MacBook Pro for professional use with top-tier specs.",
+        "Specification": [
+            "16-inch Retina display",
+            "Apple M1 Max chip",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "availability": false,
+        "rating": 4.9
+    },
+    {
+        "product_id": 10,
+        "product_title": "Samsung Galaxy S23 Ultra ",
+        "product_image": "https://images.samsung.com/is/image/samsung/assets/sa_en/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg?$ORIGIN_JPG$",
+        "category": "smartwatch",
+        "price": 299.99,
+        "offer_percent": 5,
+        "description": "Feature-packed smartwatch with health tracking and customizable watch faces.",
+        "Specification": [
+            "1.78-inch AMOLED display",
+            "Heart rate and SpO2 monitoring",
+            "GPS and Wi-Fi",
+            "Water-resistant up to 50m"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 11,
+        "product_title": "Fitness Watch 2",
+        "product_image": "https://cdn.shopify.com/s/files/1/0604/8553/3881/files/W2_3_1.jpg?v=1636699342",
+        "category": "smartwatch",
+        "price": 199.99,
+        "offer_percent": 10,
+        "description": "Lightweight fitness watch with advanced health tracking and sports modes.",
+        "Specification": [
+            "1.4-inch LCD display",
+            "Sleep tracking",
+            "Heart rate monitor",
+            "Water-resistant up to 30m"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 12,
+        "product_title": "Luxury Smartwatch Gold",
+        "product_image": "https://m.media-amazon.com/images/I/71YK1aVAmpL.jpg",
+        "category": "smartwatch",
+        "price": 499.99,
+        "offer_percent": 12,
+        "description": "Premium smartwatch with luxurious design and comprehensive functionality.",
+        "Specification": [
+            "1.5-inch OLED display",
+            "Stainless steel frame",
+            "Fitness tracking",
+            "Water-resistant up to 50m"
+        ],
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product_id": 13,
+        "product_title": "Earbuds Pro",
+        "product_image": "https://d61s2hjse0ytn.cloudfront.net/product-image/719/WiWU_Airbuds_Pro_2F.webp",
+        "category": "accessories",
+        "price": 129.99,
+        "offer_percent": 25,
+        "description": "True wireless earbuds with active noise cancellation and superior sound quality.",
+        "Specification": [
+            "Bluetooth 5.2",
+            "Active noise cancellation",
+            "Up to 24 hours battery life",
+            "IPX4 water resistance"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 14,
+        "product_title": "Portable Charger 10000mAh",
+        "product_image": "https://m.media-amazon.com/images/I/61Vnm8O7EgL.jpg",
+        "category": "accessories",
+        "price": 29.99,
+        "offer_percent": 15,
+        "description": "High-capacity portable charger with fast charging capability.",
+        "Specification": [
+            "10000mAh capacity",
+            "Dual USB output",
+            "Fast charging",
+            "Compact design"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 16,
+        "product_title": "Bluetooth Speaker Mini",
+        "product_image": "https://example.com/images/bluetoothSpeaker.jpg",
+        "category": "accessories",
+        "price": 49.99,
+        "offer_percent": 20,
+        "description": "Compact Bluetooth speaker with excellent sound quality and bass.",
+        "Specification": [
+            "Bluetooth 5.0",
+            "10 hours battery life",
+            "Water-resistant",
+            "Built-in microphone"
+        ],
+        "availability": false,
+        "rating": 4.5
+    }
+]

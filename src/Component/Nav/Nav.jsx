@@ -20,7 +20,7 @@ const Nav = () => {
     const cart_count = 2
 
     return (
-        <div className="flex box-border px-5 justify-between font-bold">
+        <nav className="flex box-border px-5 justify-between font-bold">
 
             <div onClick={() => setNavOpen(!navOpen)} className="pl-8 py-5 text-2xl md:hidden z-40">
                 {
@@ -35,7 +35,7 @@ const Nav = () => {
             <div>
                 <ul className={`md:flex pl-8 md:static md:gap-7 md:rounded-none duration-500 absolute left-10 rounded-2xl p-5 ${navOpen ? "-top-44 " : "top-11 bg-slate-900 "}`}>
                     {
-                        routers.map(router => <Link to={router.path}> <li key={router.id}>{router.service}</li></Link>)
+                        routers.map(router => <Link to={router.path} key={router.id}> <li key={router.id}>{router.service}</li></Link>)
                     }
                 </ul>
             </div>
@@ -52,9 +52,7 @@ const Nav = () => {
                 </button>
                 
             </div>
-
-
-        </div>
+        </nav>
 
 
     );

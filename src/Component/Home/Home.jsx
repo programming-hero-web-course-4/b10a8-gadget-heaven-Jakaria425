@@ -1,12 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Nav from '../Nav/Nav';
 import Footer from "../Footer/Footer";
+import HomeContainer from "../ProductContainer/ProductContainer";
 
 const Home = () => {
+    const products = useLoaderData()
     return (
-        <div className="max-w-[1440px] mx-auto mt-o bg-black pt-7">
+        <div className="max-w-[1540px] mx-auto mt-o">
             <Nav></Nav>
-            <h1>this is home</h1>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

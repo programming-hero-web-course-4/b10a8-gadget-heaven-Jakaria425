@@ -10,14 +10,33 @@ import {
 import Statistics from './Component/Statistics/Statistics.jsx';
 import Dashboard from './Component/Dashboard/Dashboard.jsx';
 import Offer from './Component/Offer/Offer.jsx';
+import ProductContainer from './Component/ProductContainer/ProductContainer.jsx';
+// import Product from './Component/Product/Product.jsx';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    loader: ()=>fetch('https://jakaria425.github.io/product/product.json'),
+    // loader: ()=> fetch('https://jakaria425.github.io/product/product.json'),
     element: <Home></Home>,
     children:[
+      {
+        path: "/",
+        loader: ()=>fetch('https://jakaria425.github.io/product/product.json'),
+        element: <ProductContainer></ProductContainer>
+      },
+      {
+        path: "/products",
+        loader: ()=>fetch('https://jakaria425.github.io/product/product.json'),
+        element: <ProductContainer></ProductContainer>
+      },
+      // {
+      //   path: "/products/:product_id",
+      //   loader: ({ params }) => params,
+      //   element: <Product></Product>
+      // },
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
