@@ -1,7 +1,11 @@
-import { Outlet, useLoaderData, useRouteLoaderData } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const Product = (product) => {
-   console.log(product.product.product_id)
+const navigate = useNavigate()
+const handelViewDetails =()=>{
+    navigate(`/products/${product.product.product_id}`)
+}
     return (
         <div>
             <div className="card bg-base-100 max-w-96 h-[450px] shadow-xl mx-auto">
@@ -15,7 +19,7 @@ const Product = (product) => {
                     <h2 className="card-title">{product.product.product_title}</h2>
                     <p>{product.product.description}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">View Details</button>
+                        <button onClick={handelViewDetails} product={product.product} className="btn btn-primary">View Details</button>
                     </div>
                 </div>
             </div>
@@ -24,3 +28,9 @@ const Product = (product) => {
 };
 
 export default Product;
+
+// {
+//     path: "/products/:product_id",
+//     loader: ({ params }) => params,
+//     element: <ProductDetails></ProductDetails>,
+//   },

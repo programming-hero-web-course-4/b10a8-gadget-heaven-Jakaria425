@@ -11,7 +11,8 @@ import Statistics from './Component/Statistics/Statistics.jsx';
 import Dashboard from './Component/Dashboard/Dashboard.jsx';
 import Offer from './Component/Offer/Offer.jsx';
 import ProductContainer from './Component/ProductContainer/ProductContainer.jsx';
-// import Product from './Component/Product/Product.jsx';
+import ProductDetails from './Component/ProductDetails/ProductDetails.jsx';
+
 
 
 
@@ -19,7 +20,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     loader: ()=>fetch('https://jakaria425.github.io/product/product.json'),
-    // loader: ()=> fetch('https://jakaria425.github.io/product/product.json'),
     element: <Home></Home>,
     children:[
       {
@@ -32,17 +32,19 @@ const router = createBrowserRouter([
         loader: ()=>fetch('https://jakaria425.github.io/product/product.json'),
         element: <ProductContainer></ProductContainer>
       },
-      // {
-      //   path: "/products/:product_id",
-      //   loader: ({ params }) => params,
-      //   element: <Product></Product>
-      // },
+      {
+        path: "/products/:product_id",
+        loader: () => fetch('https://jakaria425.github.io/product/product.json'),
+        element: <ProductDetails></ProductDetails>,
+      },
       {
         path: "/statistics",
+        loader: () => fetch('https://jakaria425.github.io/product/product.json'),
         element: <Statistics></Statistics>,
       },
       {
         path: "/dashboard",
+        loader: () => fetch('https://jakaria425.github.io/product/product.json'),
         element: <Dashboard></Dashboard>,
       },
       {

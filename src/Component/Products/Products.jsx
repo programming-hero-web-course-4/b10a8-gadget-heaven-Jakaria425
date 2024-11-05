@@ -1,10 +1,24 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Product from '../Product/Product';
+import { useEffect } from "react";
 
-const Products = () => {
-    const products = useLoaderData()
+const Products = ({category}) => {
+    const productsData = useLoaderData()
+    let products 
+    // useEffect(()=>{},[category])
+    if(category==="all"){
+        products = productsData
+        console.log('if')
+    }
+    else{
+        products = productsData.filter(product=>product.category === category)
+        console.log("else", category)
+    }
+    
+    
+    
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 mx-auto gap-3">
+        <div className=" grid grid-cols-1 md:grid-cols-3 mx-auto gap-3">
             {
                 products.map(product=><Product key={product.product_id} product={product} ></Product>)
             }

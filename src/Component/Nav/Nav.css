@@ -26,3 +26,8 @@
     justify-content: center;
     align-items: center;
 }
+nav a.active{
+    padding: 4px 9px;
+    border-radius: 10px;
+    background: #cb8bff;
+}
