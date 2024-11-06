@@ -14,6 +14,7 @@ import ProductContainer from './Component/ProductContainer/ProductContainer.jsx'
 import ProductDetails from './Component/ProductDetails/ProductDetails.jsx';
 import Favorites from './Component/Favorites/Favorites.jsx';
 import Carts from './Component/Carts/Carts.jsx';
+import NotFoundPage from './Component/NotFoundPage/NotFoundPage.jsx'
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
         path: "/",
         loader: () => fetch('https://jakaria425.github.io/product/product.json'),
         element: <Home></Home>,
+        errorElement:<NotFoundPage></NotFoundPage>,
         children: [
             {
                 path: "/",
@@ -66,6 +68,7 @@ const router = createBrowserRouter([
                 path: "/offer",
                 element: <Offer></Offer>,
             },
+        
         ]
     },
 ]);

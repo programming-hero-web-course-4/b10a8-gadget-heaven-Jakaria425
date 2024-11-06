@@ -20,12 +20,13 @@ const ProductDetails = () => {
     let c= 1
     const handelAdToCart = () => {
         addCarts(product)
-        toast("Product Add successfully")
+        toast("Product Add in Cart successfully")
         c=c+1
     }
 
     const handelAdToFavorites = () => {
         addFavorites(product)
+        toast("Product Add in Wish List successfully")
         f=f+1
     }
     const [isFavorite, setIsFavorite] = useState(false)

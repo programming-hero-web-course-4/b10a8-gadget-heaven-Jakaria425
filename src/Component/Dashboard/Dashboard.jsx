@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+    useEffect(()=>{
+        document.title = "Dashboard | GadgetHeaven"
+    },[])
+    document.title = "Dashboard | GadgetHeaven"
     const id="curt"
     const navigate = useNavigate()
     const [active, setActive] = useState()

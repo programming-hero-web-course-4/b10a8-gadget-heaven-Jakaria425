@@ -1,8 +1,13 @@
 import Banner from "../Banner/Banner";
 import { getDiscount } from "../../Utiliti/storage";
+import { useState, useEffect } from "react";
+
 
 
 const Offer = () => {
+    useEffect(()=>{
+        document.title = "Offer | GadgetHeaven"
+    },[])
     const handelDiscount = (value) => {
         getDiscount(value)
     }

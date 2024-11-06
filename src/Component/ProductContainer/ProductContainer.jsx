@@ -1,9 +1,12 @@
 import Products from "../Products/Products";
 import ProductCategory from "../ProductCategory/ProductCategory";
 import Banner from "../Banner/Banner";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ProductContainer = () => {
+    useEffect(()=>{
+        document.title = "Home | GadgetHeaven"
+    },[])
     const [category, setCategory] = useState("all")
     return (
         <div className="relative z-[4]">
