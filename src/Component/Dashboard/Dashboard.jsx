@@ -18,7 +18,7 @@ const Dashboard = () => {
     return (
         <div className="pt-24 ">
             <div className=" bg-[#9538E2] rounded-2xl h-[300px] text-white">
-                <div className="w-[700px] mx-auto text-center flex flex-col items-center justify-center">
+                <div className="max-w-[700px] mx-auto text-center flex flex-col items-center justify-center">
                     <h1 className="text-4xl font-bold mt-8">Dashboard</h1>
                     <h2 className="mt-7">Explore the latest gadgets that will take your experience to the next level.
                         From smart devices to the coolest accessories, we have it all!</h2>

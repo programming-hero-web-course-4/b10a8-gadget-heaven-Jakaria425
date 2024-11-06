@@ -6,6 +6,8 @@ import { MdFavorite } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { addCarts, carts, addFavorites, favorites } from "../../Utiliti/storage";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -14,13 +16,17 @@ const ProductDetails = () => {
     const id = parseInt(product_id)
     const products = useLoaderData()
     const product = products.find(product => product.product_id === id)
+    let f= 100
+    let c= 1
     const handelAdToCart = () => {
         addCarts(product)
+        toast("Product Add successfully")
+        c=c+1
     }
 
     const handelAdToFavorites = () => {
         addFavorites(product)
-
+        f=f+1
     }
     const [isFavorite, setIsFavorite] = useState(false)
 
@@ -47,14 +53,15 @@ const ProductDetails = () => {
                                 <IoStar /><IoStar /><IoStar /><IoStarHalf /><IoStarOutline /><p className="text-[18px] ml-2">{product.rating}</p>
                             </div>
                             <div className="flex justify-center items-center gap-5">
-                                <Link>
-                                    <button onClick={handelAdToCart} className="flex gap-2 items-center px-5 py-2 rounded-3xl bg-[#9538E2] text-black hover:bg-[#cb8bff]">
+                                <Link >
+                                    <button key={c} onClick={handelAdToCart} className="flex gap-2 items-center px-5 py-2 rounded-3xl bg-[#9538E2] text-black hover:bg-[#cb8bff]">
                                         Add To Card <MdOutlineShoppingCart />
                                     </button>
                                 </Link>
                                 
-                                <Link>
+                                <Link >
                                     <button disabled={favorites.some(favorite => favorite.product_id == id) ? true : false}
+                                    key={f}
                                         onClick={handelAdToFavorites}
                                         className={`flex ${favorites.some(favorite => favorite.product_id == id) ? "disabled:bg-gray-400 disabled:cursor-not-allowed" : "hover:bg-[#cb8bff]"} text-xl h-10 gap-2 items-center border-[2px] border-black px-4 py- rounded-3xl bg-[#fafafa] text-black `}>
                                         <MdFavorite />
@@ -66,7 +73,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
-
+            <ToastContainer/>
         </div >
     );
 };

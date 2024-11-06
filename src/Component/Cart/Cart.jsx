@@ -1,5 +1,6 @@
 import { RiDeleteBin5Line } from "react-icons/ri";
 import './Cart.css'
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, handelCardAdd, cartIndex }) => {
     console.log(cartIndex)
@@ -15,7 +16,10 @@ const Cart = ({ cart, handelCardAdd, cartIndex }) => {
                 </div>
             </div>
             <div className='flex justify-center items-center'>
-                <button onClick={() =>handelCardAdd(cart, cartIndex)}><RiDeleteBin5Line className='h-8 w-8' /></button>
+                <Link>
+                <button onClick={() =>handelCardAdd( cartIndex)}><RiDeleteBin5Line className='h-8 w-8' /></button>
+                </Link>
+                
 
             </div>
         </div>
