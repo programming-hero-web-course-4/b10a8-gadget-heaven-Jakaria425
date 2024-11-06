@@ -8,11 +8,9 @@ const Products = ({category}) => {
     // useEffect(()=>{},[category])
     if(category==="all"){
         products = productsData
-        console.log('if')
     }
     else{
         products = productsData.filter(product=>product.category === category)
-        console.log("else", category)
     }
     
     

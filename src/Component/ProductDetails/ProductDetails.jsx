@@ -4,6 +4,8 @@ import { IoStarHalf } from "react-icons/io5";
 import { IoStarOutline } from "react-icons/io5";
 import { MdFavorite } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { addCarts, carts, addFavorites, favorites } from "../../Utiliti/storage";
+import { useState } from "react";
 
 
 
@@ -12,6 +14,16 @@ const ProductDetails = () => {
     const id = parseInt(product_id)
     const products = useLoaderData()
     const product = products.find(product => product.product_id === id)
+    const handelAdToCart = () => {
+        addCarts(product)
+    }
+
+    const handelAdToFavorites = () => {
+        addFavorites(product)
+
+    }
+    const [isFavorite, setIsFavorite] = useState(false)
+
     return (
         <div className="h-[1000px] box-border pt-24">
             <div className="bg-[#9538E2] rounded-2xl h-[500px]">
@@ -28,26 +40,30 @@ const ProductDetails = () => {
                             <h2 className="mt-1 font-bold">Specification :</h2>
                             <div className="pl-4">
                                 {
-                                    product.Specification.map(specification => <p>{specification}</p>)
+                                    product.Specification.map(specification => <p key={product.Specification.indexOf(specification)}>{specification}</p>)
                                 }
                             </div>
                             <div className="flex gap-2 items-center">
                                 <IoStar /><IoStar /><IoStar /><IoStarHalf /><IoStarOutline /><p className="text-[18px] ml-2">{product.rating}</p>
                             </div>
-                            <div className="flex gap-5">
+                            <div className="flex justify-center items-center gap-5">
                                 <Link>
-                                    <button className="flex gap-2 items-center px-5 py-2 rounded-3xl bg-[#9538E2] text-black hover:bg-[#cb8bff]">
+                                    <button onClick={handelAdToCart} className="flex gap-2 items-center px-5 py-2 rounded-3xl bg-[#9538E2] text-black hover:bg-[#cb8bff]">
                                         Add To Card <MdOutlineShoppingCart />
                                     </button>
                                 </Link>
-                                <div />
-                                <div className="flex text-xl gap-2 items-center border-[2px] border-black px-4 py- rounded-3xl bg-[#fafafa] text-black hover:bg-[#cb8bff]">
-                                    <MdFavorite />
-                                </div>
+                                
+                                <Link>
+                                    <button disabled={favorites.some(favorite => favorite.product_id == id) ? true : false}
+                                        onClick={handelAdToFavorites}
+                                        className={`flex ${favorites.some(favorite => favorite.product_id == id) ? "disabled:bg-gray-400 disabled:cursor-not-allowed" : "hover:bg-[#cb8bff]"} text-xl h-10 gap-2 items-center border-[2px] border-black px-4 py- rounded-3xl bg-[#fafafa] text-black `}>
+                                        <MdFavorite />
+                                    </button>
+                                </Link>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
